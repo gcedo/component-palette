@@ -1,0 +1,16 @@
+@import "index.css";
+
+.inline_color_block {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0.1rem -1px 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #555459;
+  border-radius: 3px;
+}
+
+.color-sample {
+    margin: 1em;
+    font-size: 1.2em;
+}
