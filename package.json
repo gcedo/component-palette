@@ -6,11 +6,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/the-economist-editorial/component-palette.git"
+    "url": "git+ssh://git@github.com/economist-palette/component-palette.git"
   },
-  "homepage": "https://github.com/the-economist-editorial/component-palette#readme",
+  "homepage": "https://github.com/economist-palette/component-palette#readme",
   "bugs": {
-    "url": "https://github.com/the-economist-editorial/component-palette/issues"
+    "url": "https://github.com/economist-palette/component-palette/issues"
   },
   "main": "index.js",
   "files": [
