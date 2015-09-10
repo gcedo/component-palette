@@ -3,12 +3,12 @@
  */
 
 :root {
-  --Economist: #E60900;
-  --Beijing: #121212;
-  --Moscow: #7A7A7A;
-  --London: #B6B6B6;
-  --Berlin: #F2F2F2;
-  --Thimphu: #FFFFFF;
-  --Honolulu: #16C9B3;
+  --color-economist: #E60900;
+  --color-beijing: #121212;
+  --color-moscow: #7A7A7A;
+  --color-london: #B6B6B6;
+  --color-berlin: #F2F2F2;
+  --color-thimphu: #FFFFFF;
+  --color-honolulu: #16C9B3;
 }
 
