@@ -102,7 +102,7 @@
   "scripts": {
     "ci": "./build.sh",
     "doc": "parallelshell 'npm run doc:html' 'npm run doc:js' 'npm run doc:css'",
-    "doc:css": "",
+    "doc:css": "echo 'no css required'",
     "doc:css:watch": "npm run doc:css -- --watch",
     "doc:html": "devpack-doc index standalone",
     "doc:html:watch": "npm-watch",
@@ -111,7 +111,7 @@
     "doc:watch": "parallelshell 'npm run doc:html:watch' 'npm run doc:js:watch' 'npm run doc:css:watch'",
     "lint": "eslint $npm_package_config_lint_opts .",
     "pages": "git stash save -u pages-stash && git branch -D gh-pages; git checkout --orphan gh-pages && git add -f $npm_package_config_ghpages_files && git commit -anm'ghpages' && git push origin HEAD:gh-pages -f",
-    "prepages": "npm run build && npm run doc",
+    "prepages": "npm run doc",
     "prepublish": "babel . -d . -x .es6",
     "prepublish:watch": "npm run prepublish -- -w",
     "pretest": "npm run lint",
@@ -121,7 +121,6 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "eslint-config-strict-react": "^2.0.0",
     "react": "^0.13.3"
   },
   "devDependencies": {
