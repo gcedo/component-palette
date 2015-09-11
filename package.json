@@ -16,6 +16,9 @@
   "files": [
     "*.css"
   ],
+  "eslintConfig": {
+    "extends": "strict/react"
+  },
   "component-devserver": {
     "example": "./example.es6",
     "css": [
@@ -34,8 +37,7 @@
         "contents": "require('react').render(require('example.es6'),document.getElementById('component-preview'));"
       }
     ],
-    "html": [
-    ]
+    "html": []
   },
   "config": {
     "lint_opts": "--ignore-path .gitignore --ext .es6"
@@ -46,6 +48,7 @@
     "serve": "node_modules/@economist/component-devserver/component-devserver ."
   },
   "dependencies": {
+    "eslint-config-strict-react": "^2.0.0",
     "react": "^0.13.3"
   },
   "devDependencies": {
