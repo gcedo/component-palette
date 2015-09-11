@@ -1,13 +1,13 @@
 'use strict'
 
 let colors = [
-  ['--Economist', '#E60900'],
-  ['--Beijing', '#121212'],
-  ['--Moscow', '#7A7A7A'],
-  ['--London', '#B6B6B6'],
-  ['--Berlin', '#F2F2F2'],
-  ['--Thimphu', '#FFFFFF'],
-  ['--Honolulu',  '#16C9B3'],
+  ['Economist', '#e60900'],
+  ['Beijing', '#121212'],
+  ['Moscow', '#7a7a7a'],
+  ['London', '#b6b6b6'],
+  ['Berlin', '#f2f2f2'],
+  ['Thimphu', '#ffffff'],
+  ['Honolulu',  '#16c9b3'],
 ]
 
 let colorBox = (color) => {
@@ -22,7 +22,7 @@ let colorBox = (color) => {
 let colorSamples = colors.map(([name, color]) => (
     <tr className="color-sample">
         <td>
-            <code>var({name})</code>
+            <code>{name}</code>
         </td>
         <td>
             {colorBox(color)}
