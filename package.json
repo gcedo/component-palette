@@ -12,13 +12,14 @@
   "bugs": {
     "url": "https://github.com/economist-palette/component-palette/issues"
   },
-  "main": "index.js",
+  "main": "index.es6",
   "files": [
     "*.js",
     "*.css",
     "assets/*",
     "!karma.conf.js",
-    "!testbundle.js"
+    "!testbundle.js",
+    "*.es6"
   ],
   "babel": {
     "sourceMaps": "inline",
