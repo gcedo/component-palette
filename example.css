@@ -1,6 +1,6 @@
 @import "index.css";
 
-.inline_color_block {
+.palette__inline-color-block {
   display: inline-block;
   vertical-align: middle;
   margin: 0px 0.1rem -1px 0px;
@@ -10,7 +10,7 @@
   border-radius: 3px;
 }
 
-.color-sample {
-    margin: 1em;
-    font-size: 1.2em;
+.palette__color-sample {
+  margin: 1em;
+  font-size: 1.2em;
 }
