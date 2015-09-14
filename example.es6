@@ -13,12 +13,12 @@ function colorBox(color) {
   const bgStyle = { background: color };
   const fgStyle = { color, textShadow: '1px 1px 0 gray' };
   return (<span>
-    <div className="inline_color_block" style={bgStyle}></div>
+    <div className="palette__inline-color-block" style={bgStyle}></div>
     <span style={fgStyle}>{color}</span>
   </span>);
 }
 const colorSamples = colors.map(([ name, color ]) => (
-    <tr className="color-sample">
+    <tr className="palette__color-sample">
         <td>
             <code>{name}</code>
         </td>
