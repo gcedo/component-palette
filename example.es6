@@ -3,11 +3,13 @@ import React from 'react';
 const colors = [
   [ 'Economist', '#e60900' ],
   [ 'Beijing', '#121212' ],
+  [ 'Kiev', '#383E42' ],
   [ 'Moscow', '#7a7a7a' ],
   [ 'London', '#b6b6b6' ],
   [ 'Berlin', '#f2f2f2' ],
   [ 'Thimphu', '#ffffff' ],
   [ 'Honolulu', '#16c9b3' ],
+  [ 'Dakar', '#0D6380' ],
 ];
 function colorBox(color) {
   const bgStyle = { background: color };
