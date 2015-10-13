@@ -18,17 +18,19 @@ function colorBox(color) {
   </span>);
 }
 const colorSamples = colors.map(([ name, color ]) => (
-    <tr className="palette__color-sample">
-        <td>
-            <code>{name}</code>
-        </td>
-        <td>
-            {colorBox(color)}
-        </td>
-    </tr>
+  <tr className="palette__color-sample" key={`${name}--${color}`}>
+    <td>
+      <code>{name}</code>
+    </td>
+    <td>
+      {colorBox(color)}
+    </td>
+  </tr>
 ));
 export default (
-    <table>
-        {colorSamples}
-    </table>
+  <table>
+    <tbody>
+      {colorSamples}
+    </tbody>
+  </table>
 );
