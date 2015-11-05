@@ -10,6 +10,8 @@ const colors = [
   [ 'Thimphu', '#ffffff' ],
   [ 'Honolulu', '#16c9b3' ],
   [ 'Dakar', '#0D6380' ],
+  [ 'Boston', '#009FE3' ],
+  [ 'Chicago', '#004899' ],
 ];
 function colorBox(color) {
   const bgStyle = { background: color };
@@ -20,17 +22,19 @@ function colorBox(color) {
   </span>);
 }
 const colorSamples = colors.map(([ name, color ]) => (
-    <tr className="palette__color-sample">
-        <td>
-            <code>{name}</code>
-        </td>
-        <td>
-            {colorBox(color)}
-        </td>
-    </tr>
+  <tr className="palette__color-sample" key={`${name}--${color}`}>
+    <td>
+      <code>{name}</code>
+    </td>
+    <td>
+      {colorBox(color)}
+    </td>
+  </tr>
 ));
 export default (
-    <table>
-        {colorSamples}
-    </table>
+  <table>
+    <tbody>
+      {colorSamples}
+    </tbody>
+  </table>
 );

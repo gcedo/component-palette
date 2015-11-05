@@ -4,4 +4,5 @@ node_modules/
 assets/
 .DS_Store
 !karma.conf.js
-
+bundle.css
+*.html

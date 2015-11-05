@@ -482,7 +482,7 @@ body {
   <body>
     <h1 class="component-title">
       @economist/component-palette
-      <span>(v1.2.0)</span>
+      <span>(v1.3.0)</span>
     </h1>
     <div id="component-preview">
       [object Object]
@@ -500,11 +500,15 @@ body {
 <span class="hljs-keyword">const</span> colors = [
   [ <span class="hljs-string">'Economist'</span>, <span class="hljs-string">'#e60900'</span> ],
   [ <span class="hljs-string">'Beijing'</span>, <span class="hljs-string">'#121212'</span> ],
+  [ <span class="hljs-string">'Kiev'</span>, <span class="hljs-string">'#383E42'</span> ],
   [ <span class="hljs-string">'Moscow'</span>, <span class="hljs-string">'#7a7a7a'</span> ],
   [ <span class="hljs-string">'London'</span>, <span class="hljs-string">'#b6b6b6'</span> ],
   [ <span class="hljs-string">'Berlin'</span>, <span class="hljs-string">'#f2f2f2'</span> ],
   [ <span class="hljs-string">'Thimphu'</span>, <span class="hljs-string">'#ffffff'</span> ],
   [ <span class="hljs-string">'Honolulu'</span>, <span class="hljs-string">'#16c9b3'</span> ],
+  [ <span class="hljs-string">'Dakar'</span>, <span class="hljs-string">'#0D6380'</span> ],
+  [ <span class="hljs-string">'Boston'</span>, <span class="hljs-string">'#009FE3'</span> ],
+  [ <span class="hljs-string">'Chicago'</span>, <span class="hljs-string">'#004899'</span> ],
 ];
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">colorBox</span>(<span class="hljs-params">color</span>) </span>{
   <span class="hljs-keyword">const</span> bgStyle = { background: color };
@@ -515,19 +519,21 @@ body {
   <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>)</span>;
 }
 <span class="hljs-keyword">const</span> colorSamples = colors.map(([ name, color ]) =&gt; (
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"palette__color-sample"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>{name}<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
-            {colorBox(color)}
-        <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">tr</span> <span class="hljs-attribute">className</span>=<span class="hljs-value">"palette__color-sample"</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{`${name}--${color}`}</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>{name}<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>
+      {colorBox(color)}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
 )</span>);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> (
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
-        {colorSamples}
-    <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+      {colorSamples}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
 )</span>;
 </pre></code>
       </div>

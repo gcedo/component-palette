@@ -15,8 +15,8 @@
   "main": "index.js",
   "files": [
     "*.js",
+    "*.es6",
     "*.css",
-    "assets/*",
     "!karma.conf.js",
     "!testbundle.js"
   ],
@@ -97,13 +97,13 @@
   "config": {
     "lint_opts": "--ignore-path .gitignore --ext .es6",
     "testbundle_opts": "-r react -r .:./index.es6 -r ./example.js:example ./test/index.js -o testbundle.js",
-    "ghpages_files": "*.html *.css *.js assets/"
+    "ghpages_files": "*.html *.css *.js "
   },
   "scripts": {
     "build": "echo 'No build required, css-only component'",
     "ci": "./build.sh",
     "doc": "parallelshell 'npm run doc:html' 'npm run doc:js' 'npm run doc:css'",
-    "doc:css": "",
+    "doc:css": "cssnext --sourcemap example.css bundle.css",
     "doc:css:watch": "npm run doc:css -- --watch",
     "doc:html": "devpack-doc index standalone",
     "doc:html:watch": "npm-watch",
@@ -122,7 +122,10 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "react": "^0.13.3"
+    "parallelshell": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0-rc"
   },
   "devDependencies": {
     "@economist/component-devpack": "3.1.3",
@@ -147,9 +150,6 @@
     "pre-commit": "^1.0.10",
     "react": "^0.14.0-rc",
     "watchify": "^3.4.0"
-  },
-  "peerDependencies": {
-    "react": "^0.14.0-rc"
   },
   "pre-commit": [
     "lint"
