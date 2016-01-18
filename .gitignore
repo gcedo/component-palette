@@ -1,8 +1,9 @@
 node_modules/
 *.log
 *.js
-assets/
-.DS_Store
-!karma.conf.js
 bundle.css
 *.html
+!karma.conf.js
+assets/
+.DS_Store
+
