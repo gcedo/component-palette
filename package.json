@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-palette",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Variables for each color in the color palette.",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
@@ -26,7 +26,6 @@
     ]
   },
   "babel": {
-    "sourceMaps": "inline",
     "stage": 0,
     "loose": "all",
     "compact": false
