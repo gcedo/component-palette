@@ -1,17 +1,17 @@
 import React from 'react';
 
 const colors = [
-  [ 'Economist', '#e60900' ],
-  [ 'Beijing', '#121212' ],
-  [ 'Kiev', '#383E42' ],
-  [ 'Moscow', '#7a7a7a' ],
-  [ 'London', '#b6b6b6' ],
-  [ 'Berlin', '#f2f2f2' ],
-  [ 'Thimphu', '#ffffff' ],
-  [ 'Honolulu', '#16c9b3' ],
-  [ 'Dakar', '#0D6380' ],
-  [ 'Boston', '#009FE3' ],
-  [ 'Chicago', '#004899' ],
+  [ 'economist', '#E3120b' ],
+  [ 'beijing', '#121212' ],
+  [ 'kiev', '#383E42' ],
+  [ 'moscow', '#7A7A7A' ],
+  [ 'london', '#B6B6B6' ],
+  [ 'berlin', '#F2F2F2' ],
+  [ 'thimphu', '#FFFFFF' ],
+  [ 'honolulu', '#16C9B3' ],
+  [ 'dakar', '#0D6380' ],
+  [ 'boston', '#C5CBE9' ],
+  [ 'chicago', '#3E51B5' ],
 ];
 function colorBox(color) {
   const bgStyle = { background: color };
@@ -24,7 +24,7 @@ function colorBox(color) {
 const colorSamples = colors.map(([ name, color ]) => (
   <tr className="palette__color-sample" key={`${name}--${color}`}>
     <td>
-      <code>{name}</code>
+      <code className="color-name">{name}</code>
     </td>
     <td>
       {colorBox(color)}

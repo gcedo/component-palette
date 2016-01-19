@@ -14,3 +14,7 @@
   margin: 1em;
   font-size: 1.2em;
 }
+
+.palette__color-sample .color-name {
+  text-transform: capitalize;
+}
