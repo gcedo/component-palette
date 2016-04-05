@@ -22,7 +22,7 @@ function colorBox(color) {
   </span>);
 }
 const colorSamples = colors.map(([ name, color ]) => (
-  <tr className="palette__color-sample" key={`${name}--${color}`}>
+  <tr className="palette__color-sample" key={`${ name }--${ color }`}>
     <td>
       <code className="color-name">{name}</code>
     </td>

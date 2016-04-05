@@ -1,0 +1,17 @@
+/**
+ * Colors
+ */
+
+:root {
+  --color-economist: #e3120b;
+  --color-beijing: #121212;
+  --color-kiev: #383e42;
+  --color-moscow: #7a7a7a;
+  --color-london: #b6b6b6;
+  --color-berlin: #f2f2f2;
+  --color-thimphu: #fff;
+  --color-honolulu: #16c9b3;
+  --color-dakar: #0d6380;
+  --color-boston: #c5cbe9;
+  --color-chicago: #3e51b5;
+}
