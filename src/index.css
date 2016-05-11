@@ -2,6 +2,9 @@
  * Colors
  */
 
+/* stylelint-disable no-indistinguishable-colors */
+/* to pass linting against --color-thimphu --color-berlin */
+
 :root {
   --color-economist: #e3120b;
   --color-beijing: #121212;
@@ -17,3 +20,5 @@
   --color-milan: #4c60eb;
   --color-budapest: #fc150d;
 }
+
+/* stylelint-enable no-indistinguishable-colors */
