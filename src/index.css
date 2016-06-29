@@ -18,7 +18,13 @@
   --color-boston: #c5cbe9;
   --color-chicago: #3e51b5;
   --color-milan: #4c60eb;
+  --color-copenhagen: #38a8e0;
   --color-budapest: #fc150d;
+  --color-york: #fff600;
+  --color-bristol: #08c5b2;
+  --color-sanfrancisco: #f39200;
+  --color-genoa: #4e64b5;
+  --color-manchester: #3ca8df;
 }
 
 /* stylelint-enable no-indistinguishable-colors */
